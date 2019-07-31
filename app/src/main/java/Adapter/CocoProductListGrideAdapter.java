@@ -38,11 +38,11 @@ public class CocoProductListGrideAdapter extends RecyclerView.Adapter<CocoProduc
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         holder.mobi.setImageResource(models.get(position).getMobi());
-        holder.mobi.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(context, ProductDetails.class);
-                context.startActivity(i);
+                Intent i =new Intent(view.getContext(), ProductDetails.class);
+                view.getContext().startActivity(i);
             }
         });
     }

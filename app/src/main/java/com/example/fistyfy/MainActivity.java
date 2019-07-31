@@ -60,15 +60,15 @@ public class MainActivity extends AppCompatActivity {
                     fragment = new FragmentHome();
                     loadFragment(fragment);
                 } else if (y == 1) {
-//                    fragment = new CategoriesFragment();
-//                    loadFragment(fragment);
+                    fragment = new FragmentSearch();
+                    loadFragment(fragment);
                 } else if (y == 2) {
-                   // fragment = new WishListFragment();
-//                    loadFragment(fragment);
+                    fragment = new Whishlist();
+                    loadFragment(fragment);
                 }
                 else if(y == 3) {
-                       // fragment = new AccountFragment();
-                       //loadFragment(fragment);
+                        fragment = new FragmentAccount();
+                       loadFragment(fragment);
                 }
                 return true;
             }

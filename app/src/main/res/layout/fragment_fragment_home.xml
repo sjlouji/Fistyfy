@@ -258,7 +258,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/rect_white_border"
                         android:orientation="vertical"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:id="@+id/liiphone">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -284,7 +285,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/rect_white_border"
                         android:orientation="vertical"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:id="@+id/livivo">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -310,7 +312,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/rect_white_border"
                         android:orientation="vertical"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:id="@+id/liredmi">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -629,7 +632,8 @@
                                 android:paddingTop="7dp"
                                 android:text="View All"
                                 android:textColor="#0d0d0d"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:id="@+id/viewall"/>
 
                         </LinearLayout>
 

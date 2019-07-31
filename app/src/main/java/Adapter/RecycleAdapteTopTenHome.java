@@ -18,9 +18,6 @@ import java.util.List;
 import Model.TopTenModelClass;
 
 
-/**
- * Created by Rp on 6/14/2016.
- */
 public class RecycleAdapteTopTenHome extends RecyclerView.Adapter<RecycleAdapteTopTenHome.MyViewHolder> {
     Context context;
 

@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -33,6 +34,7 @@ public class FragmentHome extends Fragment {
     private RecyclerView recyclerView;
     private CocoProductListGrideAdapter coco_product_list_gride_adapter;
     private ArrayList<CocoProductListGridmodel> coco_product_list_gride_models;
+    TextView viewall;
     View v;
     LinearLayout lo;
     @Override
@@ -40,11 +42,44 @@ public class FragmentHome extends Fragment {
                              Bundle savedInstanceState) {
         v= inflater.inflate(R.layout.fragment_fragment_home, container, false);
         recyclerView = v.findViewById(R.id.product);
+        viewall=v.findViewById(R.id.viewall);
+        viewall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(getContext(),ProductGridView.class);
+                startActivity(i);
+            }
+        });
         lo=v.findViewById(R.id.louji);
         lo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i =new Intent(getContext(),Explore.class);
+                startActivity(i);
+            }
+        });
+        LinearLayout l1,l2,l3;
+        l1=v.findViewById(R.id.liiphone);
+        l2=v.findViewById(R.id.livivo);
+        l3=v.findViewById(R.id.liredmi);
+        l1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(getContext(),ProductGridView.class);
+                startActivity(i);
+            }
+        });
+        l2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(getContext(),ProductGridView.class);
+                startActivity(i);
+            }
+        });
+        l3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(getContext(),ProductGridView.class);
                 startActivity(i);
             }
         });

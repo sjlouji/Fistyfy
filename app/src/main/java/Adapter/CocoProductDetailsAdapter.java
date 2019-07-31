@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.fistyfy.DetailaFragment;
 import com.example.fistyfy.Details4Fragment;
 
 
@@ -12,10 +13,8 @@ public class CocoProductDetailsAdapter extends FragmentPagerAdapter {
 
     int mNoOfTabs;
 
-    public CocoProductDetailsAdapter(FragmentManager fm) {
+    public CocoProductDetailsAdapter(FragmentManager fm){
         super(fm);
-
-
     }
 
     @Override
@@ -23,26 +22,26 @@ public class CocoProductDetailsAdapter extends FragmentPagerAdapter {
         switch (i) {
 
             case 0:
-                Details4Fragment tab1 = new Details4Fragment();
+                DetailaFragment tab1 = new DetailaFragment();
                 return tab1;
             case 1:
-                Details4Fragment tab2 = new Details4Fragment();
+                DetailaFragment tab2 = new DetailaFragment();
                 return tab2;
             case 2:
-                Details4Fragment tab3 = new Details4Fragment();
+                DetailaFragment tab3 = new DetailaFragment();
                 return tab3;
 
             case 3:
-                Details4Fragment tab4 = new Details4Fragment();
+                DetailaFragment tab4 = new DetailaFragment();
                 return tab4;
             case 4:
-                Details4Fragment tab5 = new Details4Fragment();
+                DetailaFragment tab5 = new DetailaFragment();
                 return tab5;
             case 5:
-                Details4Fragment tab6 = new Details4Fragment();
+                DetailaFragment tab6 = new DetailaFragment();
                 return tab6;
             case 6:
-                Details4Fragment tab7 = new Details4Fragment();
+                DetailaFragment tab7 = new DetailaFragment();
                 return tab7;
 
 

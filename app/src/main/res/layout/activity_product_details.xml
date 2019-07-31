@@ -14,12 +14,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TableLayout
+        <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@color/Primary"
+            android:background="#3276B0"
             android:tag="sticky"
             app:tabGravity="center"
             app:tabIndicatorColor="@color/white"
@@ -29,8 +29,7 @@
             android:paddingLeft="10.5dp"
             android:elevation="3dp"
             app:tabTextAppearance="@style/MyMenuTextAppearance1"
-            app:tabTextColor="@color/lightred" />
-        <!--Viewpager used-->
+            app:tabTextColor="#ffffff" />
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"

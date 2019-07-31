@@ -4,17 +4,14 @@ package Adapter;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
-import com.example.fistyfy.NewArrivalFragment;
-
+import com.example.fistyfy.PopularFragment;
 
 
-
-public class CategoryPagerAdapterExplor extends FragmentPagerAdapter {
+public class CategoryPagerAdapterProductGrid extends FragmentPagerAdapter {
 
         int mNoOfTabs;
 
-        public CategoryPagerAdapterExplor(FragmentManager fm, int NumberOfTabs)
+        public CategoryPagerAdapterProductGrid(FragmentManager fm, int NumberOfTabs)
 
         {
                 super(fm);
@@ -26,23 +23,18 @@ public class CategoryPagerAdapterExplor extends FragmentPagerAdapter {
                 switch (position) {
 
                         case 0:
-                                NewArrivalFragment tab1 = new NewArrivalFragment();
+                                PopularFragment tab1 = new PopularFragment();
                                 return tab1;
                         case 1:
-                                NewArrivalFragment tab2 = new NewArrivalFragment();
+                                PopularFragment tab2 = new PopularFragment();
                                 return tab2;
                         case 2:
-                                NewArrivalFragment tab3 = new NewArrivalFragment();
+                                PopularFragment tab3 = new PopularFragment();
                                 return tab3;
 
                         case 3:
-                                NewArrivalFragment tab4 = new NewArrivalFragment();
+                                PopularFragment tab4 = new PopularFragment();
                                 return tab4;
-
-
-                        case 4:
-                                NewArrivalFragment tab5 = new NewArrivalFragment();
-                                return tab5;
 
 
                         default:

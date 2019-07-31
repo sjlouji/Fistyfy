@@ -18,9 +18,7 @@ import java.util.List;
 import Model.HomeBannerModelClass;
 
 
-/**
- * Created by Rp on 6/14/2016.
- */
+
 public class RecycleAdapteHomeBanner extends RecyclerView.Adapter<RecycleAdapteHomeBanner.MyViewHolder> {
     Context context;
 
